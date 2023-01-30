@@ -11,9 +11,9 @@ float calculo(int castracoes, float mlC, float mlV)
 
 void main()
 {
-    const float mlCastracao = 25.5;
-    const float mlVasilhame = 500;
-    const int custoVasilhame = 60;
+    const float ML_CASTRACAO = 25.5;
+    const float ML_VASILHAME = 500;
+    const int CUSTO_VASILHAME = 60;
     
     int castracoes, vasilhames;
     float custoTotal;
@@ -21,8 +21,8 @@ void main()
     printf("Quantas castracoes serao realizadas? ");
     scanf("%d", &castracoes);
 
-    vasilhames = calculo(castracoes, mlCastracao, mlVasilhame);
-    custoTotal = vasilhames * custoVasilhame;
+    vasilhames = calculo(castracoes, ML_CASTRACAO, ML_VASILHAME);
+    custoTotal = vasilhames * CUSTO_VASILHAME;
 
     printf("Vasilhames necessarios: %d\nCusto total: R$ %.2f", vasilhames, custoTotal);
 }
